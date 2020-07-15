@@ -1,0 +1,26 @@
+{
+	"function": {
+		"reactamplifieddcbefc14": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"dependsOn": []
+		}
+	},
+	"api": {
+		"apib7805dd0": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "reactamplifieddcbefc14",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			]
+		}
+	}
+}
