@@ -61,5 +61,12 @@
 			},
 			"lastPushDirHash": "2+drEDghviQEmygdSHdE6v5tNOQ="
 		}
+	},
+	"hosting": {
+		"amplifyhosting": {
+			"service": "amplifyhosting",
+			"type": "cicd",
+			"lastPushTimeStamp": "2020-07-15T07:57:26.756Z"
+		}
 	}
 }
