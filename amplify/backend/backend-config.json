@@ -1,32 +1,52 @@
 {
-    "function": {
-        "reactamplifieddcbefc14": {
-            "build": true,
-            "providerPlugin": "awscloudformation",
-            "service": "Lambda",
-            "dependsOn": []
-        }
-    },
-    "api": {
-        "apib7805dd0": {
-            "service": "API Gateway",
-            "providerPlugin": "awscloudformation",
-            "dependsOn": [
-                {
-                    "category": "function",
-                    "resourceName": "reactamplifieddcbefc14",
-                    "attributes": [
-                        "Name",
-                        "Arn"
-                    ]
-                }
-            ]
-        }
-    },
-    "hosting": {
-        "amplifyhosting": {
-            "service": "amplifyhosting",
-            "type": "cicd"
-        }
-    }
+	"function": {
+		"reactamplifieddcbefc14": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"dependsOn": []
+		}
+	},
+	"api": {
+		"apib7805dd0": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "reactamplifieddcbefc14",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			]
+		},
+		"apie47832b6": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "reactamplifieddcbefc14",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			]
+		}
+	},
+	"hosting": {
+		"amplifyhosting": {
+			"service": "amplifyhosting",
+			"type": "cicd"
+		}
+	},
+	"auth": {
+		"cognito94041448": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	}
 }

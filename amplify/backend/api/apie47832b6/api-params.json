@@ -1,0 +1,40 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "reactamplifieddcbefc14",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/GET"
+                ],
+                "unauth": [
+                    "/GET"
+                ]
+            }
+        }
+    ],
+    "resourceName": "apie47832b6",
+    "apiName": "apie47832b6",
+    "functionArns": [
+        {
+            "lambdaFunction": "reactamplifieddcbefc14"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "amplify-reactamplified-dev-161343-authRole",
+        "unAuthRoleName": "amplify-reactamplified-dev-161343-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "reactamplifieddcbefc14",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

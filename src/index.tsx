@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Amplify, {API} from "aws-amplify";
+import Amplify from "aws-amplify";
 import awsExports from "./aws-exports";
 import {Auth0Provider} from "@auth0/auth0-react";
 Amplify.configure(awsExports);
